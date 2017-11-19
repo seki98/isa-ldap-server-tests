@@ -14,6 +14,8 @@
 
   `make test SERVER=DOMAIN_NAME PORT=PORT_NUMBER`
 
+  See failed tests and its output. eg tests/out.3
+
 ### Must be run from root folder of the project
 
 #### testing is performed by running diff between expected output and real output. 
