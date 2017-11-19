@@ -15,7 +15,7 @@ ldapsearch -h $1 -p $2 -x -P 2 -s base "uid=xkisel" > tests/out.3 2>&1 &
 ldapsearch -h $1 -p $2  -x -P 2 -s base "(|(uid=xkisel02)(uid=xkisel00))" > tests/out.4 2>&1 &
 
 #5 get xkisel02 only if not xkisel00
-ldapsearch -h $1 -p $2 -x -P 2 -s base "(&(uid=xkisel02)(!(uid=xkisel00)))" > tests/out.5 2>&1 & 
+ldapsearch -h $1 -p $2 -x -P 2 -s base '(&(uid=xkisel02)(!(uid=xkisel00)))' > tests/out.5 2>&1 & 
 
 #6 get either xkisel02 or anything but xkisel00
 ldapsearch -h $1 -p $2 -x -P 2 -s base "(|(uid=xkisel02)(!(uid=xkisel00)))" > tests/out.6 2>&1 &
