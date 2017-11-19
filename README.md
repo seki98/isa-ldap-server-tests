@@ -1,4 +1,6 @@
 # Ldap server paralel tests
+  clone the repo to your project directory
+  `https://github.com/seki98/isa-ldap-server-tests.git tests`
 
 #### quick usage:
   run from project directory:
@@ -6,8 +8,6 @@
   where domain name is where server is running with the given port
 
 #### long usage:
-  clone the repo to your project directory
-  `https://github.com/seki98/isa-ldap-server-tests.git tests`
 
   add this target to your Makefile:
   ```
