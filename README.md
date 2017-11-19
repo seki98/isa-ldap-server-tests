@@ -1,6 +1,11 @@
 # Ldap server paralel tests
 
-#### usage:
+#### quick usage:
+  run from project directory:
+  `sh tests/tests.sh {SERVER_DOMAIN_NAME} {PORT_NUMBER}`
+  where domain name is where server is running with the given port
+
+#### long usage:
   clone the repo to your project directory
   `https://github.com/seki98/isa-ldap-server-tests.git tests`
 
