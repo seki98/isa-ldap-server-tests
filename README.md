@@ -1,4 +1,4 @@
-# Ldap server tests
+# Ldap server paralel tests
 
 #### usage:
   

@@ -1,6 +1,6 @@
 # Pass SERVER=DOMAIN_NAME PORT="####" as parameters
 
-echo Running tests...
+echo Running paralel tests
 
 #1 get all entries
 ldapsearch -h $1 -p $2  -x -s base "uid=x*" > tests/out.1 2>&1 &
