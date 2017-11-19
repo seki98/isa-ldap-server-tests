@@ -20,7 +20,7 @@ ldapsearch -h $1 -p $2 -x -s base "(&(uid=xkisel02)(!(uid=xkisel00)))" > tests/o
 #6 get either xkisel02 or anything but xkisel00
 ldapsearch -h $1 -p $2 -x -s base "(|(uid=xkisel02)(!(uid=xkisel00)))" > tests/out.6 2>&1
 
-#7 error, not implemented by server
+#7 error, not implemented by server(message here will differ as everyone has other error messages
 ldapsearch -h $1 -p $2 -x -s base "uid<=x" > tests/out.7 2>&1
 
 #8 wrong base error
@@ -33,7 +33,7 @@ ldapsearch -h $1 -p $2 -x -s base -z 5 "uid=x*" > tests/out.9 2>&1
 #10 get unlimited results
 ldapsearch -h $1 -p $2 -x -s base -z 0 "uid=x*" > tests/out.10 2>&1
 
-#11 find 442
+#11 find 442 - everyone except mr. Thanh
 ldapsearch -p $2 -h $1 '(!(|(&(cn=*Thanh)(uid=xdolon00))(&(cn=Tomas)(mail=xtomas0@email.cz))))' -s base -x > tests/out.11 2>&1
 
 nums="1 2 3 4 5 6 7 9 10 11"
