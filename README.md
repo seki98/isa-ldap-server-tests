@@ -1,7 +1,9 @@
 # Ldap server paralel tests
 
 #### usage:
-  
+  clone the repo to your project directory
+  `https://github.com/seki98/isa-ldap-server-tests.git tests`
+
   add this target to your Makefile:
   ```
   test:
